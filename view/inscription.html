@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" sizes="20x20" href="img/logo.png">
+        <title>
+            Inscription / Tweeter
+        </title>
+    </head>
+    <body>
+        <div id="login" class="container">
+            
+            <img src="img/logo.png" width="55" height="55" alt="logo twitter"><br>
+            <h1 role="heading">Inscription Twitter</h1><br>
+    
+            <form id="inscription">
+                <input type="text" class="form-control"  placeholder="Prénom" id="input_nickname"><br>
+                <input type="text" class="form-control"  placeholder="Pseudo" id="input_pseudo"><br>
+                <input type="date" class="form-control" placeholder="Date de naissance" id="input_date"><br>
+                <input type="text" class="form-control" placeholder="Ville" id="input_location"><br>
+                <input type="email" class="form-control"  placeholder="Email" id="input_mail">
+                <input type="number" class="form-control" placeholder="Téléphone" id="input_tel">
+                <div>
+                    <a href="#" id="utiliserMail">Utiliser un mail</a>
+                    <a href="#" id="utiliserTel">Utiliser un téléphone</a>
+                </div><br>
+                <input type="password" class="form-control" placeholder="Mot de passe" id="input_pwd"><br>
+                <input type="password" class="form-control" placeholder="Confirmation mot de passe" id="input_pwd_verify"><br>
+                <input type="submit" class="btn btn-primary btn-lg" value="S'inscrire" id="inscription_suivant" id="submit"><br><br>
+            </form>
+              
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="script/inscription.js"></script>
+    </body>
+</html> 

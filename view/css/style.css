@@ -1,0 +1,253 @@
+#wrapper {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.sidebar-nav {
+    position: fixed;
+}
+
+.contenu {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+h1 , h2{
+    font-family: “Helvetica Neue”,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+}
+
+.btn {
+    width: 360px;
+}
+
+.side {
+    text-align: left;
+    width: 150px;
+}
+
+ #login {
+    padding-left: 25%;
+    padding-right: 25%;
+ }
+
+.form-control {
+    padding: 10px;
+}
+
+.img-fluid {
+    height: 100%
+}
+
+#bienvenue {
+    padding-top: 40%;
+}
+
+@media only screen and (max-width: 1002px) {
+    .contenu {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+}
+
+@media only screen and (max-width: 1276px) {
+    .side {
+        visibility: collapse;
+    }
+
+    .show {
+        visibility: visible;
+    }
+
+    #wrapper {
+        grid-template-columns: 15% 85%;
+    }
+}
+
+@media only screen and (max-width: 1618px) {
+    #wrapper {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+}
+
+@media only screen and (max-width: 1388px) {
+    #wrapper {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media only screen and (max-width: 1172px) {
+    #wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+  
+.modal, .modal2 {
+    position: fixed;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+  
+#modal-box, #modal-box2 {
+    /*position: relative;*/
+    padding: 20px 20px;
+    background-color: white;
+    border: thin solid grey;
+    border-radius: 10%;
+}
+
+.fa-check-circle , .fa-circle {
+    font-size: 45px;
+}
+
+.emoji {
+    font-size: 30px;
+}
+
+#bleu {
+    color: rgb(0, 195, 255);
+}
+
+#jaune {
+    color: rgb(255, 145, 0);
+}
+
+#rose {
+    color: rgb(194, 64, 114);
+}
+
+#violet {
+    color: rgb(166, 41, 204);
+}
+
+#rouge {
+    color: rgb(255, 81, 0);
+}
+
+#vert {
+    color: rgb(49, 143, 36);
+}
+
+#bgbleu{
+    background-color: rgb(0, 195, 255);;
+}
+
+#bgjaune {
+    background-color: rgb(255, 145, 0);
+}
+
+#bgrose {
+    background-color : rgb(194, 64, 114);
+}
+
+#bgviolet {
+    background-color: rgb(166, 41, 204);;
+}
+
+#bgrouge {
+    background-color: rgb(255, 81, 0);;
+}
+
+#bgvert {
+    background-color: rgb(49, 143, 36);
+}
+
+ textarea {
+     border-color: transparent;
+ }
+
+ .avatar {
+     border-radius: 50%;
+     width: 40px;
+     margin-bottom: 5%;
+ }
+
+ .blue {
+     border: solid;
+     background-color: rgb(21, 3, 102);
+ }
+
+ .black {
+    background-color: black;
+ }
+
+.white {
+    background-color: white;
+}
+
+#nickname, #nickname_header{
+    font-weight: bold;
+    font-size: 22px
+}
+
+#username, #at{
+    opacity: 0.65;
+    font-size: 13px;
+}
+
+i {
+    padding-right: 3%;
+}
+
+.tweet {
+    border-top: 0.01rem solid rgb(231, 227, 227);
+    padding-top: 5%;
+}
+
+.tweet_picture {
+    border-radius: 50%;
+}
+
+#follower:hover, #followed:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#modal_followed, #modal_follower{
+    display: none;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 15px;
+    width: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+#modal_follower{
+    left: 50%;
+}
+
+.bio {
+    margin-bottom: 10px;
+}
+
+#tweeter {
+    width: auto;
+}
+
+#lien {
+    visibility: collapse;
+}
+
+/*.scroll {
+    height: 700px;
+    overflow: auto;
+}*/
+
+.fa-heart {
+    padding-left: 20px;
+}
+
+.retweeté {
+    color: gray;
+}

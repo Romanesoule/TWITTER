@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/c78f98c967.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https:/resources/demos/style.css">
+        <link rel="icon" type="image/png" sizes="20x20" href="img/logo.png">
+        <title>
+            Accueil / Twitter
+        </title>
+    </head>
+    <body>
+        <div id="wrapper" >
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav"></ul>
+                    <li><a href="accueil.html" class="btn show side"><img src="img/logo.png" width="45" height="45" alt="logo twitter"></a></li>
+                    <li><a href="accueil.html"class="btn side"><i class="fas show fa-home"></i>&ensp;Accueil</a></li>
+                    <li><a href="explorer.html"class="btn side"><i class="fas show fa-hashtag"></i>&ensp;Explorer</a></li>
+                    <li><a href="accueil.html"class="btn side"><i class="far show fa-bell"></i>&ensp;Notifications</a></li>
+                    <li><a href="messagerie.php"class="btn side"><i class="far show fa-envelope"></i>&ensp;Messages</a></li>
+                    <li><a href="compte.html" class="btn side"><i class="far show fa-user"></i>&ensp;Profil</a></li>
+                    <li><a class="btn side popin-open"><i class="fas show fa-sliders-h"></i>&ensp;Affichage</a></li>
+                    <li><a class="btn show side btn-primary changebg deconnect">&ensp;Déconnexion</a></li>
+                </ul>
+                <div> 
+                </div>
+            </div>
+            <div class="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div id="show" class="col"><h1>Accueil</h1></div>
+                        
+                        <div class="col-4 ui-widget">
+                            <form id="search">
+                                <input type="text" id="recherche" name="recherche" placeholder="&#8981;  Recherche Twitter">
+                             </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="myModal" class="modal2">
+                            <div id="modal-box2">
+                                <form>
+                                    <input type="text" class="form-control"  placeholder="Pseudo"><br>
+                                    <input type="text" class="form-control" placeholder="Ville"><br>
+                                    <input type="email" class="form-control"  placeholder="Email"><br>
+                                    <input type="password" class="form-control" placeholder="Mot de passe"><br>
+                                    <input type="password" class="form-control" placeholder="Confirmation mot de passe"><br>
+                                    <input type="button" class="btn btn-primary btn-lg" value="S'inscrire"><br><br>
+                                </form>
+                              <button class="popin-dismiss2 btn">Terminé</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hide" class="row">
+                        <div  class="col-8">
+                            <img src="img/avatar.jpg" alt="avatar" class="avatar" id="avatar">
+                            <form id="tweet">
+                                <textarea placeholder="Quoi de neuf?" cols="30" rows="1" id="send-twt"></textarea><br>
+                                <i class="far fa-image change media"></i>
+                                <i class="fas fa-poll-h change"></i>
+                                <i class="far fa-smile change"></i>
+                                <input type="text" id="lien" >
+                                <input type="submit" value="Tweeter" id="tweeter" class="btn btn-primary change" >
+                            </form>
+                            <div class="actuality scroll"></div>
+                        </div>
+                        <div class="col-4">
+                            <h3>Tendances pour vous</h3>
+                            <div class="tendance"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="row">
+                        <div id="myModal" class="modal">
+                            <div id="modal-box">
+                                <p>Taille de police</p>
+                                <p>Aa
+                                    <input type="radio" name="size" value="16px">
+                                    <input type="radio" name="size" value="20px">
+                                    <input type="radio" name="size" value="24px">
+                                    <input type="radio" name="size" value="28px">
+                                    <input type="radio" name="size" value="32px">
+                                Aa
+                                </p>
+
+                                <p>Couleurs</p>
+                                <p><i class="fas fa-circle" id="bleu"></i>
+                                    <i class="fas fa-circle" id="jaune"></i>
+                                    <i class="fas fa-circle" id="rose"></i>
+                                    <i class="fas fa-circle" id="violet"></i>
+                                    <i class="fas fa-circle" id="rouge"></i>
+                                    <i class="fas fa-circle" id="vert"></i>
+                                </p>
+                                <p class="emoji">
+                                    &#128153;  
+                                    &#11088; 
+                                    &#127800; 
+                                    &#128025; 
+                                    &#128293; 
+                                    &#129361;
+                                </p>
+                                <p>Arrière-plan</p>
+                                <input type="checkbox" class="white">Par défaut
+                                <input type="checkbox" class="blue">Bleu foncé
+                                <input type="checkbox"class="black">Noir
+                                <br><br>
+                              <button class="popin-dismiss btn">Terminé</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="script/theme.js"></script>
+        <script src="script/compte.js"></script>
+        <script src="script/recherche.js"></script>
+        <script src="script/show.js"></script>
+        <script src='script/suivre.js'></script>
+        <script src="script/send_tweet.js"></script>
+        <script src="script/deconnect.js"></script>
+        <script src="script/actuality.js"></script>
+        <script src="script/retweet.js"></script>
+        <script src="script/reply.js"></script>
+    </body>
+    
+</html>        
